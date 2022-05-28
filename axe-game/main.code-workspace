@@ -1,32 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "braustin-portal-frontend",
-			"path": "..\\..\\braustin-portal-frontend"
-		},
-		{
-			"name": "braustin-server",
-			"path": "..\\..\\braustin-server"
-		},
-		{
-			"name": "homebase",
-			"path": "..\\..\\homebase"
-		},
-		{
-			"name": "fmmh-next",
-			"path": "..\\..\\fmmh-next"
-		},
-		{
 			"path": "."
-		},
-		{
-			"path": "..\\..\\..\\Desktop\\14-MVC"
-		},
-		{
-			"path": "..\\..\\mvc-express-handlebars-starter"
-		},
-		{
-			"path": "..\\..\\passthetrash"
 		}
 	],
 	"settings": {

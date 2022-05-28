@@ -1,27 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "cpp-sandbox",
-			"path": "..\\..\\cpp-sandbox"
-		},
-		{
-			"name": "braustin-portal-frontend",
-			"path": "..\\..\\braustin-portal-frontend"
-		},
-		{
-			"name": "braustin-server",
-			"path": "..\\..\\braustin-server"
-		},
-		{
-			"name": "homebase",
-			"path": "..\\..\\homebase"
-		},
-		{
-			"name": "fmmh-next",
-			"path": "..\\..\\fmmh-next"
-		},
-		{
-			"path": ".."
+			"path": "."
 		}
 	],
 	"settings": {
