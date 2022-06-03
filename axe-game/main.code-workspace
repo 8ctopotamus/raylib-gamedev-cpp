@@ -1,7 +1,35 @@
 {
 	"folders": [
 		{
+			"name": "axe-game",
 			"path": "."
+		},
+		{
+			"name": "braustin-portal-frontend",
+			"path": "..\\..\\braustin-portal-frontend"
+		},
+		{
+			"name": "braustin-server",
+			"path": "..\\..\\braustin-server"
+		},
+		{
+			"name": "fmmh-next",
+			"path": "..\\..\\fmmh-next"
+		},
+		{
+			"name": "homebase",
+			"path": "..\\..\\homebase"
+		},
+		{
+			"name": "snowplownews",
+			"path": "..\\..\\..\\..\\..\\xampp\\htdocs\\snowplownews"
+		},
+		{
+			"name": "rwmarketing",
+			"path": "..\\..\\..\\..\\..\\xampp\\htdocs\\rwmarketing"
+		},
+		{
+			"path": "..\\..\\porchpass-domain"
 		}
 	],
 	"settings": {
