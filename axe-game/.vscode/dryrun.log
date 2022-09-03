@@ -1,4 +1,11 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
+make: Entering directory 'c:/Users/Josh/code/cpp-gamedev/axe-game'
+mingw32-make game
+ 
+make[1]: Entering directory 'c:/Users/Josh/code/cpp-gamedev/axe-game'
+make[1]: Leaving directory 'c:/Users/Josh/code/cpp-gamedev/axe-game'
+make: Leaving directory 'c:/Users/Josh/code/cpp-gamedev/axe-game'
+ 
+make[1]: *** No rule to make target 'main.c', needed by 'game'.
+make: *** [Makefile:388: all] Error 2
 

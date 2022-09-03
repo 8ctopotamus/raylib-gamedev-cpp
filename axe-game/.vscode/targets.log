@@ -1,4 +1,769 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
+mingw32-make game
+# make[1]: Entering directory 'c:/Users/Josh/code/cpp-gamedev/axe-game'
+# GNU Make 4.2
+# Built for i686-w64-mingw32
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Sep 03 16:14:45 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# environment
+AFI_APPNAME = ERS_Replacement
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 372)
+SRC = $(call rwildcard, *.c, *.h)
+# makefile
+MAKEFLAGS = pqrRw
+# makefile (from 'Makefile', line 65)
+USE_WAYLAND_DISPLAY = FALSE
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# makefile (from 'Makefile', line 33)
+COMPILER_PATH = C:/raylib/w64devkit/bin
+# makefile (from 'Makefile', line 28)
+RAYLIB_VERSION = 3.0.0
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 313)
+LDLIBS = -lraylib -lopengl32 -lgdi32 -lwinmm
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/Josh/code/cpp-gamedev/axe-game
+# default
+SHELL := C:/raylib/w64devkit/bin/sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+VBOX_MSI_INSTALL_PATH = D:\Oracle\VirtualBox\
+# makefile (from 'Makefile', line 212)
+CFLAGS = -Wall -std=c++14 -D_DEFAULT_SOURCE -Wno-missing-braces -s -O1 $(RAYLIB_PATH)/src/raylib.rc.data
+# environment
+ONEDRIVE = C:\Users\Josh\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\Josh\AppData\Local\Temp
+# makefile (from 'Makefile', line 369)
+OBJ_DIR = obj
+# makefile (from 'Makefile', line 57)
+BUILD_MODE = RELEASE
+# environment
+PROGRAMW6432 = C:\Program Files
+# makefile (from 'Makefile', line 374)
+OBJS = main.c
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_CWD = C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHROME_EXECUTABLE = C:\Program Files\Google\Chrome\Application\chrome.exe
+# default
+MAKE_HOST := i686-w64-mingw32
+# environment
+AFI_API_KEY = 78d52135-10d4-40bb-80d1-ec1040fe7e3d
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# makefile (from 'Makefile', line 30)
+RAYLIB_PATH = ..\..
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132329949359039872
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\Josh
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# makefile (from 'Makefile', line 29)
+RAYLIB_API_VERSION = 300
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 254)
+INCLUDE_PATHS = -I. -I$(RAYLIB_PATH)/src -I$(RAYLIB_PATH)/src/external
+# makefile (from 'Makefile', line 279)
+LDFLAGS = -L.
+# environment
+ANDROID_HOME = C:\Users\Josh\AppData\Local\Android\Sdk
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync
+# makefile (from 'Makefile', line 61)
+USE_EXTERNAL_GLFW = FALSE
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_320_IZWLRNHBDOMCISTQ
+# environment
+DEV_HTTP_BASIC_AUTH_ENCODED = QG1GQG06ejVRcWM9VylhfUY9Vj8/Vw==
+# makefile (from 'Makefile', line 72)
+PLATFORM_OS = WINDOWS
+# environment
+COMPUTERNAME = DESKTOP-BN8B0V8
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# default
+.LOADED := 
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = Josh
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Josh\AppData\Roaming\Code\CachedData\784b0177c56c607789f9638da7b6bf3230d47a8c
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-BN8B0V8
+# environment
+PROD_HTTP_BASIC_AUTH_ENCODED = ZmVyc3NydnA6NCNweUY4NDIh
+# makefile (from 'Makefile', line 382)
+MAKEFILE_PARAMS = $(PROJECT_NAME)
+# environment
+ONEDRIVECONSUMER = C:\Users\Josh\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = DESKTOP-BN8B0V8
+# environment
+MAKELEVEL := 1
+# makefile (from 'Makefile', line 177)
+MAKE = mingw32-make
+# default
+MAKECMDGOALS := game
+# makefile (from 'Makefile', line 73)
+PATH := C:/raylib/w64devkit/bin:C:/raylib/w64devkit/bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools;C:\Users\Josh\AppData\Roaming\npm
+# environment
+API_QUEUE_BASIC_AUTH_PROD = WVRwOGJCcEFeRUdmLSQmVzpuZVFQIWNnJCtLJDZiQ0Vq
+# makefile (from 'Makefile', line 150)
+CC = g++
+# environment
+JAVA_HOME = C:\Program Files\Java\jdk1.8.0_211
+# makefile (from 'Makefile', line 51)
+RAYLIB_H_INSTALL_PATH = $(DESTDIR)/include
+# default
+MAKE_VERSION := 4.2
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 48)
+DESTDIR = /usr/local
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\Josh\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# makefile (from 'Makefile', line 365)
+rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subst *,%,$2),$d))
+# default
+MAKE_COMMAND := make
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\67b08b5de60d0f131e4dd4ad553afb3a-1.71.0-main-sock
+# environment
+HOMEPATH = \Users\Josh
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -pqrRw
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# makefile (from 'Makefile', line 146)
+EXAMPLE_RUNTIME_PATH = $(RAYLIB_RELEASE_PATH)
+# environment
+APPDATA = C:\Users\Josh\AppData\Roaming
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# environment
+TEMP = C:\Users\Josh\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# makefile (from 'Makefile', line 37)
+PLATFORM = PLATFORM_DESKTOP
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 368)
+SRC_DIR = src
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 132)
+RAYLIB_RELEASE_PATH = $(RAYLIB_PATH)/src
+# makefile (from 'Makefile', line 27)
+PROJECT_NAME = game
+# makefile (from 'Makefile', line 49)
+RAYLIB_INSTALL_PATH = $(DESTDIR)/lib
+# environment
+ANDROID_SDK_ROOT = C:\Users\Josh\AppData\Local\Android\Sdk
+# environment
+LC_ALL = C
+# environment
+AFI_API_KEY_PROD = 5c3f19ea-890a-4c7d-87aa-22ddbefa7095
+# environment
+FABRIC_BASIC_AUTH_ENCODED_DEV = ZmVyc3NydnQ6NyZ4eUtPNTUj
+# environment
+API_QUEUE_BASIC_AUTH_DEV = QG1GQG06ejVRcWM9VylhfUY9Vj8/Vw==
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 7100
+# makefile (from 'Makefile', line 54)
+RAYLIB_LIBTYPE = STATIC
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 320
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-BN8B0V8
+# variable set hash-table stats:
+# Load=132/1024=13%, Rehash=0, Collisions=24/231=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /opt/homebrew/include: could not be stat'd.
+# . (key c:/Users/Josh/code/cpp-gamedev/axe-game, mtime 1654288243ll): 11 files, no impossibilities.
+# ..\../src: could not be stat'd.
+# src: could not be stat'd.
+# /opt/homebrew/lib: could not be stat'd.
+
+# 11 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c
+#  recipe to execute (from 'Makefile', line 398):
+	$(CC) -c $< -o $@ $(CFLAGS) $(INCLUDE_PATHS) -D$(PLATFORM)
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+all:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 388):
+	$(MAKE) $(MAKEFILE_PARAMS)
+
+.PHONY: all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-22 09:41:30
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 404):
+		del *.o *.exe /s
+	@echo Cleaning done
+
+game: main.c
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 392):
+	$(CC) -o $(PROJECT_NAME)$(EXT) $(OBJS) $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM)
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/24=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 24 / storage = 241 B / avg = 10 B
+# current buf: size = 8174 B / used = 241 B / count = 24 / avg = 10 B
+
+# strcache performance: lookups = 34 / hit rate = 29%
+# hash-table stats:
+# Load=24/8192=0%, Rehash=0, Collisions=1/34=3%
+# Finished Make data base on Sat Sep 03 16:14:45 2022
+
+# make[1]: Leaving directory 'c:/Users/Josh/code/cpp-gamedev/axe-game'
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Sep 03 16:14:45 2022
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+JAVA_HOME = C:\Program Files\Java\jdk1.8.0_211
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 372)
+SRC = $(call rwildcard, *.c, *.h)
+# makefile (from 'Makefile', line 27)
+PROJECT_NAME = game
+# environment
+USERPROFILE = C:\Users\Josh
+# environment
+CHROME_EXECUTABLE = C:\Program Files\Google\Chrome\Application\chrome.exe
+# environment
+VBOX_MSI_INSTALL_PATH = D:\Oracle\VirtualBox\
+# environment
+LOCALAPPDATA = C:\Users\Josh\AppData\Local
+# makefile (from 'Makefile', line 368)
+SRC_DIR = src
+# makefile (from 'Makefile', line 72)
+PLATFORM_OS = WINDOWS
+# environment
+VSCODE_CWD = C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# makefile (from 'Makefile', line 49)
+RAYLIB_INSTALL_PATH = $(DESTDIR)/lib
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# makefile (from 'Makefile', line 28)
+RAYLIB_VERSION = 3.0.0
+# makefile (from 'Makefile', line 51)
+RAYLIB_H_INSTALL_PATH = $(DESTDIR)/include
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# makefile (from 'Makefile', line 369)
+OBJ_DIR = obj
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_320_IZWLRNHBDOMCISTQ
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Josh\AppData\Roaming\Code\CachedData\784b0177c56c607789f9638da7b6bf3230d47a8c
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\Josh\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\Josh\OneDrive
+# makefile
+CURDIR := c:/Users/Josh/code/cpp-gamedev/axe-game
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+PROD_HTTP_BASIC_AUTH_ENCODED = ZmVyc3NydnA6NCNweUY4NDIh
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+API_QUEUE_BASIC_AUTH_PROD = WVRwOGJCcEFeRUdmLSQmVzpuZVFQIWNnJCtLJDZiQ0Vq
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# makefile (from 'Makefile', line 30)
+RAYLIB_PATH = ..\..
+# makefile (from 'Makefile', line 61)
+USE_EXTERNAL_GLFW = FALSE
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 320
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# makefile (from 'Makefile', line 48)
+DESTDIR = /usr/local
+# environment
+AFI_API_KEY_PROD = 5c3f19ea-890a-4c7d-87aa-22ddbefa7095
+# makefile (from 'Makefile', line 33)
+COMPILER_PATH = C:/raylib/w64devkit/bin
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# makefile (from 'Makefile', line 132)
+RAYLIB_RELEASE_PATH = $(RAYLIB_PATH)/src
+# makefile (from 'Makefile', line 37)
+PLATFORM = PLATFORM_DESKTOP
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ANDROID_SDK_ROOT = C:\Users\Josh\AppData\Local\Android\Sdk
+# environment
+ONEDRIVECONSUMER = C:\Users\Josh\OneDrive
+# default
+MAKE_HOST := Windows32
+# environment
+ANDROID_HOME = C:\Users\Josh\AppData\Local\Android\Sdk
+# makefile (from 'Makefile', line 374)
+OBJS = main.c
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\Josh
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 177)
+MAKE = mingw32-make
+# makefile (from 'Makefile', line 73)
+PATH := C:/raylib/w64devkit/bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools;C:\Users\Josh\AppData\Roaming\npm
+# environment
+COMPUTERNAME = DESKTOP-BN8B0V8
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# makefile (from 'Makefile', line 313)
+LDLIBS = -lraylib -lopengl32 -lgdi32 -lwinmm
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132329949359039872
+# environment
+LOGONSERVER = \\DESKTOP-BN8B0V8
+# environment
+USERNAME = Josh
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-BN8B0V8
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 29)
+RAYLIB_API_VERSION = 300
+# environment
+FABRIC_BASIC_AUTH_ENCODED_DEV = ZmVyc3NydnQ6NyZ4eUtPNTUj
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# makefile (from 'Makefile', line 279)
+LDFLAGS = -L.
+# environment
+AFI_API_KEY = 78d52135-10d4-40bb-80d1-ec1040fe7e3d
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-BN8B0V8
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+DEV_HTTP_BASIC_AUTH_ENCODED = QG1GQG06ejVRcWM9VylhfUY9Vj8/Vw==
+# makefile (from 'Makefile', line 146)
+EXAMPLE_RUNTIME_PATH = $(RAYLIB_RELEASE_PATH)
+# environment
+APPDATA = C:\Users\Josh\AppData\Roaming
+# makefile (from 'Makefile', line 212)
+CFLAGS = -Wall -std=c++14 -D_DEFAULT_SOURCE -Wno-missing-braces -s -O1 $(RAYLIB_PATH)/src/raylib.rc.data
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# makefile (from 'Makefile', line 382)
+MAKEFILE_PARAMS = $(PROJECT_NAME)
+# makefile (from 'Makefile', line 65)
+USE_WAYLAND_DISPLAY = FALSE
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# makefile (from 'Makefile', line 57)
+BUILD_MODE = RELEASE
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\Josh\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\67b08b5de60d0f131e4dd4ad553afb3a-1.71.0-main-sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from 'Makefile', line 54)
+RAYLIB_LIBTYPE = STATIC
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = 7100
+# makefile (from 'Makefile', line 150)
+CC = g++
+# makefile (from 'Makefile', line 254)
+INCLUDE_PATHS = -I. -I$(RAYLIB_PATH)/src -I$(RAYLIB_PATH)/src/external
+# environment
+AFI_APPNAME = ERS_Replacement
+# environment
+API_QUEUE_BASIC_AUTH_DEV = QG1GQG06ejVRcWM9VylhfUY9Vj8/Vw==
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+# makefile (from 'Makefile', line 365)
+rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subst *,%,$2),$d))
+# variable set hash-table stats:
+# Load=133/1024=13%, Rehash=0, Collisions=29/243=12%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# src: could not be stat'd.
+# /opt/homebrew/include: could not be stat'd.
+# . (key c:/Users/Josh/code/cpp-gamedev/axe-game, mtime 1654288243): 11 files, no impossibilities.
+# /opt/homebrew/lib: could not be stat'd.
+# ..\../src: could not be stat'd.
+
+# 11 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c
+#  recipe to execute (from 'Makefile', line 398):
+	$(CC) -c $< -o $@ $(CFLAGS) $(INCLUDE_PATHS) -D$(PLATFORM)
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+game: main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 392):
+	$(CC) -o $(PROJECT_NAME)$(EXT) $(OBJS) $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-22 09:41:30
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 404):
+		del *.o *.exe /s
+	@echo Cleaning done
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all:
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  recipe to execute (from 'Makefile', line 388):
+	$(MAKE) $(MAKEFILE_PARAMS)
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/25=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 24 / storage = 241 B / avg = 10 B
+# current buf: size = 8174 B / used = 241 B / count = 24 / avg = 10 B
+
+# strcache performance: lookups = 36 / hit rate = 33%
+# hash-table stats:
+# Load=24/8192=0%, Rehash=0, Collisions=0/36=0%
+# Finished Make data base on Sat Sep 03 16:14:45 2022
+
+ 
+make[1]: *** No rule to make target 'main.c', needed by 'game'.  Stop.
+make: *** [Makefile:388: all] Error 2
 

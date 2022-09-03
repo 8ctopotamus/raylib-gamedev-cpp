@@ -1,23 +1,28 @@
 {
 	"folders": [
 		{
-			"name": "zylo-shopify",
-			"path": "..\\..\\zylo-shopify"
+			"name": "cpp-gamedev",
+			"path": ".."
 		},
 		{
-			"name": "snowplownews",
-			"path": "..\\..\\..\\..\\..\\xampp\\htdocs\\snowplownews"
+			"name": "braustin",
+			"path": "..\\..\\braustin"
 		},
 		{
-			"name": "rwmarketing",
-			"path": "..\\..\\..\\..\\..\\xampp\\htdocs\\rwmarketing"
+			"name": "johnsoncentrifugal-nextjs",
+			"path": "..\\..\\johnsoncentrifugal-nextjs"
 		},
 		{
 			"name": "rwcashflow",
 			"path": "..\\..\\rwcashflow"
 		},
 		{
-			"path": ".."
+			"name": "rwmarketing",
+			"path": "..\\..\\..\\..\\..\\xampp\\htdocs\\rwmarketing"
+		},
+		{
+			"name": "snowplownews",
+			"path": "..\\..\\..\\..\\..\\xampp\\htdocs\\snowplownews"
 		}
 	],
 	"settings": {
@@ -68,6 +73,7 @@
 			"cinttypes": "cpp",
 			"typeinfo": "cpp"
 		},
-		"makefile.extensionOutputFolder": "./.vscode"
+		"makefile.extensionOutputFolder": "./.vscode",
+		"FSharp.suggestGitignore": false
 	}
 }
