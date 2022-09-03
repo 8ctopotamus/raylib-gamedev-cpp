@@ -6,28 +6,30 @@ int main() {
   InitWindow(windowWidth, windowHeight, "Dapper Dasher!");
   SetTargetFPS(60);
 
-  const int width{50};
-  const int height{80};
-
   // acceleraction due to gravity: (pixels/frame) / frame
   const int gravity{1};
   const int jumpVelocity{-22};
 
-  bool isInAir = false;
-  int posY{windowHeight - height};
-  int velocity{-10};
-
   // scarfy
   Texture2D scarfy = LoadTexture("textures/scarfy.png");
   Rectangle scarfyRec;
+  scarfyRec.width = scarfy.width / 6;
+  scarfyRec.height = scarfy.height;
+  scarfyRec.x = 0;
+  scarfyRec.y = 0;
   Vector2 scarfyPos;
+  scarfyPos.x = windowWidth / 2 - scarfyRec.width / 2;
+  scarfyPos.y = windowHeight - scarfyRec.height;
+
+  bool isInAir = false;
+  int velocity{-10};
 
   while (!WindowShouldClose()) {
     BeginDrawing();
     ClearBackground(WHITE);
 
     // perform ground check 
-    if (posY >= windowHeight - height) {
+    if (scarfyPos.y >= windowHeight - scarfyRec.height) {
       // rectangle is on ground
       velocity = 0;
       isInAir = false;
@@ -43,9 +45,10 @@ int main() {
     }
 
     // update position
-    posY += velocity;
+    scarfyPos.y += velocity;
     
-    DrawRectangle(windowWidth / 2, posY, width, height, BLUE);
+    // TODO: https://www.udemy.com/course/cpp-fundamentals/learn/lecture/26327620#overview
+    // DrawTextureRec(scarfy, scarfyRec, scarfyPos, w)
 
     EndDrawing();
   }
