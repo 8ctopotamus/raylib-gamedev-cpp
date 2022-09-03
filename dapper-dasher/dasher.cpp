@@ -6,17 +6,21 @@ int main() {
   InitWindow(windowWidth, windowHeight, "Dapper Dasher!");
   SetTargetFPS(60);
 
+  const int width{50};
+  const int height{80};
+
   // acceleraction due to gravity: (pixels/frame) / frame
   const int gravity{1};
   const int jumpVelocity{-22};
 
-  const int width{50};
-  const int height{80};
-  
   bool isInAir = false;
-
   int posY{windowHeight - height};
   int velocity{-10};
+
+  // scarfy
+  Texture2D scarfy = LoadTexture("textures/scarfy.png");
+  Rectangle scarfyRec;
+  Vector2 scarfyPos;
 
   while (!WindowShouldClose()) {
     BeginDrawing();
