@@ -6,9 +6,9 @@ int main() {
   InitWindow(windowWidth, windowHeight, "Dapper Dasher!");
   SetTargetFPS(60);
 
-  // acceleraction due to gravity: (pixels/frame) / frame
-  const int gravity{1};
-  const int jumpVelocity{-22};
+  // acceleraction due to gravity: (pixels/second) / second
+  const int gravity{1'000};
+  const int jumpVelocity{-600}; // px / second
 
   // scarfy
   Texture2D scarfy = LoadTexture("textures/scarfy.png");
@@ -25,6 +25,9 @@ int main() {
   int velocity{-10};
 
   while (!WindowShouldClose()) {
+    // delta time (time since last frame)
+    float dt{ GetFrameTime() };
+
     BeginDrawing();
     ClearBackground(WHITE);
 
@@ -35,7 +38,7 @@ int main() {
       isInAir = false;
     } else {
       // apply gravity if in air
-      velocity += gravity;
+      velocity += gravity * dt;
       isInAir = true;
     }
 
@@ -45,13 +48,13 @@ int main() {
     }
 
     // update position
-    scarfyPos.y += velocity;
+    scarfyPos.y += velocity * dt;
     
-    // TODO: https://www.udemy.com/course/cpp-fundamentals/learn/lecture/26327620#overview
-    // DrawTextureRec(scarfy, scarfyRec, scarfyPos, w)
+    DrawTextureRec(scarfy, scarfyRec, scarfyPos, WHITE);
 
     EndDrawing();
   }
+  UnloadTexture(scarfy);
   CloseWindow();
 
   return 0;
