@@ -8,7 +8,7 @@ mingw32-make game
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 22 12:33:49 2022
+# Make data base, printed on Sun Sep 04 10:09:12 2022
 
 # Variables
 
@@ -117,7 +117,7 @@ USE_EXTERNAL_GLFW = FALSE
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8244_CYYYHWVRZTLJPRHA
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12716_EQVBEPVHNNIJLJQY
 # environment
 DEV_HTTP_BASIC_AUTH_ENCODED = QG1GQG06ejVRcWM9VylhfUY9Vj8/Vw==
 # makefile (from 'Makefile', line 72)
@@ -139,7 +139,7 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Josh\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = C:\Users\Josh\AppData\Roaming\Code\CachedData\784b0177c56c607789f9638da7b6bf3230d47a8c
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -163,7 +163,7 @@ MAKE = mingw32-make
 # default
 MAKECMDGOALS := game
 # makefile (from 'Makefile', line 73)
-PATH := C:/raylib/w64devkit/bin:C:/raylib/w64devkit/bin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Program Files\Bandizip\;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Roaming\npm;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools
+PATH := C:/raylib/w64devkit/bin:C:/raylib/w64devkit/bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools;C:\Users\Josh\AppData\Roaming\npm
 # environment
 API_QUEUE_BASIC_AUTH_PROD = WVRwOGJCcEFeRUdmLSQmVzpuZVFQIWNnJCtLJDZiQ0Vq
 # makefile (from 'Makefile', line 150)
@@ -201,7 +201,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\67b08b5de60d0f131e4dd4ad553afb3a-1.69.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\67b08b5de60d0f131e4dd4ad553afb3a-1.71.0-main-sock
 # environment
 HOMEPATH = \Users\Josh
 # environment
@@ -271,7 +271,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 8244
+VSCODE_PID = 12716
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-BN8B0V8
 # variable set hash-table stats:
@@ -284,7 +284,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-BN8B0V8
 # Directories
 
 # /opt/homebrew/include: could not be stat'd.
-# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1658503414ll): 12 files, no impossibilities.
+# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1662268040ll): 12 files, no impossibilities.
 # ..\../src: could not be stat'd.
 # src: could not be stat'd.
 # /opt/homebrew/lib: could not be stat'd.
@@ -364,7 +364,7 @@ game: main.c
 # strcache performance: lookups = 35 / hit rate = 28%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/35=3%
-# Finished Make data base on Fri Jul 22 12:33:49 2022
+# Finished Make data base on Sun Sep 04 10:09:12 2022
 
 # make[1]: Leaving directory 'c:/Users/Josh/code/cpp-gamedev/dapper-dasher'
 # GNU Make 4.3
@@ -374,7 +374,7 @@ game: main.c
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 22 12:33:49 2022
+# Make data base, printed on Sun Sep 04 10:09:12 2022
 
 # Variables
 
@@ -425,7 +425,7 @@ RAYLIB_H_INSTALL_PATH = $(DESTDIR)/include
 # makefile (from 'Makefile', line 369)
 OBJ_DIR = obj
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8244_CYYYHWVRZTLJPRHA
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12716_EQVBEPVHNNIJLJQY
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -439,7 +439,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Josh\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = C:\Users\Josh\AppData\Roaming\Code\CachedData\784b0177c56c607789f9638da7b6bf3230d47a8c
 # environment
 LANG = C
 # default
@@ -483,7 +483,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 8244
+VSCODE_PID = 12716
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # makefile (from 'Makefile', line 48)
@@ -531,7 +531,7 @@ MAKELEVEL := 0
 # makefile (from 'Makefile', line 177)
 MAKE = mingw32-make
 # makefile (from 'Makefile', line 73)
-PATH := C:/raylib/w64devkit/bin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Program Files\Bandizip\;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Roaming\npm;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools
+PATH := C:/raylib/w64devkit/bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools;C:\Users\Josh\AppData\Roaming\npm
 # environment
 COMPUTERNAME = DESKTOP-BN8B0V8
 # default
@@ -613,7 +613,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\Josh\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\67b08b5de60d0f131e4dd4ad553afb3a-1.69.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\67b08b5de60d0f131e4dd4ad553afb3a-1.71.0-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -653,7 +653,7 @@ rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subs
 
 # src: could not be stat'd.
 # /opt/homebrew/include: could not be stat'd.
-# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1658503414): 12 files, no impossibilities.
+# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1662268040): 12 files, no impossibilities.
 # /opt/homebrew/lib: could not be stat'd.
 # ..\../src: could not be stat'd.
 
@@ -757,7 +757,7 @@ main.c:
 # strcache performance: lookups = 37 / hit rate = 32%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=0/37=0%
-# Finished Make data base on Fri Jul 22 12:33:49 2022
+# Finished Make data base on Sun Sep 04 10:09:12 2022
 
  
 make[1]: *** No rule to make target 'main.c', needed by 'game'.  Stop.
