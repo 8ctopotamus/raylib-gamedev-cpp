@@ -1,5 +1,6 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
 mingw32-make game
+ 
 # make[1]: Entering directory 'c:/Users/Josh/code/cpp-gamedev/dapper-dasher'
 # GNU Make 4.2
 # Built for i686-w64-mingw32
@@ -7,8 +8,11 @@ mingw32-make game
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
+make[1]: *** No rule to make target 'main.c', needed by 'game'.  Stop.
 
-# Make data base, printed on Sun Sep 04 10:09:12 2022
+
+# Make data base, printed on Mon Sep 05 07:28:01 2022
 
 # Variables
 
@@ -117,7 +121,7 @@ USE_EXTERNAL_GLFW = FALSE
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12716_EQVBEPVHNNIJLJQY
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20688_BKJCOJUIMUVEWSGS
 # environment
 DEV_HTTP_BASIC_AUTH_ENCODED = QG1GQG06ejVRcWM9VylhfUY9Vj8/Vw==
 # makefile (from 'Makefile', line 72)
@@ -271,7 +275,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 12716
+VSCODE_PID = 20688
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-BN8B0V8
 # variable set hash-table stats:
@@ -284,7 +288,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-BN8B0V8
 # Directories
 
 # /opt/homebrew/include: could not be stat'd.
-# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1662268040ll): 12 files, no impossibilities.
+# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1662318618ll): 12 files, no impossibilities.
 # ..\../src: could not be stat'd.
 # src: could not be stat'd.
 # /opt/homebrew/lib: could not be stat'd.
@@ -364,9 +368,12 @@ game: main.c
 # strcache performance: lookups = 35 / hit rate = 28%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/35=3%
-# Finished Make data base on Sun Sep 04 10:09:12 2022
+# Finished Make data base on Mon Sep 05 07:28:01 2022
 
 # make[1]: Leaving directory 'c:/Users/Josh/code/cpp-gamedev/dapper-dasher'
+ 
+make: *** [Makefile:388: all] Error 2
+
 # GNU Make 4.3
 # Built for Windows32
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -374,7 +381,7 @@ game: main.c
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Sep 04 10:09:12 2022
+# Make data base, printed on Mon Sep 05 07:28:01 2022
 
 # Variables
 
@@ -425,7 +432,7 @@ RAYLIB_H_INSTALL_PATH = $(DESTDIR)/include
 # makefile (from 'Makefile', line 369)
 OBJ_DIR = obj
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12716_EQVBEPVHNNIJLJQY
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20688_BKJCOJUIMUVEWSGS
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -483,7 +490,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 12716
+VSCODE_PID = 20688
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # makefile (from 'Makefile', line 48)
@@ -531,7 +538,8 @@ MAKELEVEL := 0
 # makefile (from 'Makefile', line 177)
 MAKE = mingw32-make
 # makefile (from 'Makefile', line 73)
-PATH := C:/raylib/w64devkit/bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools;C:\Users\Josh\AppData\Roaming\npm
+PATH := C:/raylib/w64devkit/bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\Win 
+dowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Josh\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Redis\;C:\Users\Josh\flutter\bin;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\make\tools\install\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Ruby31-x64\bin;C:\Users\Josh\.cargo\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\src\flutter\flutter\bin;C:\Users\Josh\AppData\Roaming\Composer\vendor\bin;C:\Users\Josh\.deno\bin;C:\Users\Josh\AppData\Local\Microsoft\WindowsApps;C:\Users\Josh\terminus;C:\Users\Josh\.dotnet\tools;C:\Users\Josh\AppData\Roaming\npm
 # environment
 COMPUTERNAME = DESKTOP-BN8B0V8
 # default
@@ -653,7 +661,7 @@ rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subs
 
 # src: could not be stat'd.
 # /opt/homebrew/include: could not be stat'd.
-# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1662268040): 12 files, no impossibilities.
+# . (key c:/Users/Josh/code/cpp-gamedev/dapper-dasher, mtime 1662318618): 12 files, no impossibilities.
 # /opt/homebrew/lib: could not be stat'd.
 # ..\../src: could not be stat'd.
 
@@ -661,7 +669,8 @@ rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subs
 
 # Implicit Rules
 
-obj/%.o: src/%.c
+obj/%.o: src/ 
+%.c
 #  recipe to execute (from 'Makefile', line 398):
 	$(CC) -c $< -o $@ $(CFLAGS) $(INCLUDE_PATHS) -D$(PLATFORM)
 
@@ -757,9 +766,6 @@ main.c:
 # strcache performance: lookups = 37 / hit rate = 32%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=0/37=0%
-# Finished Make data base on Sun Sep 04 10:09:12 2022
+# Finished Make data base on Mon Sep 05 07:28:01 2022
 
  
-make[1]: *** No rule to make target 'main.c', needed by 'game'.  Stop.
-make: *** [Makefile:388: all] Error 2
-
