@@ -25,7 +25,8 @@ int main() {
 
   // nebulas
   Texture2D nebula = LoadTexture("textures/12_nebula_spritesheet.png");
-  const int sizeOfNebulae{3};
+  const int initialNebXSpacing = 300;
+  const int sizeOfNebulae{10};
   AnimData nebulae[sizeOfNebulae]{};
   for (int i = 0; i < sizeOfNebulae; i++) {
     nebulae[i].rec.x = 0.0;
@@ -36,10 +37,8 @@ int main() {
     nebulae[i].frame = 0;
     nebulae[i].runningTime = 0.0;
     nebulae[i].updateTime = 0.0;
+    nebulae[i].pos.x = windowDimensions[0] + i * initialNebXSpacing;
   }
-  nebulae[0].pos.x = windowDimensions[0];
-  nebulae[1].pos.x = windowDimensions[0] + 300;
-  nebulae[2].pos.x = windowDimensions[0] + 600;
   
   // scarfy
   Texture2D scarfy = LoadTexture("textures/scarfy.png");
@@ -77,10 +76,11 @@ int main() {
       velocity += jumpVelocity;
     }
 
-    // update nebula position
-    nebulae[0].pos.x += nebVelocity * dt;
-    // update nebula2 position
-    nebulae[1].pos.x += nebVelocity * dt;
+    // update nebulae position
+    for (int i = 0; i < sizeOfNebulae; i++) {
+      nebulae[i].pos.x += nebVelocity * dt;
+    }
+
     // update scarfy position
     scarfyData.pos.y += velocity * dt;
     
