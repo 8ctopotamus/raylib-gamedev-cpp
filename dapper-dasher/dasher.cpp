@@ -25,10 +25,9 @@ int main() {
 
   // nebulas
   Texture2D nebula = LoadTexture("textures/12_nebula_spritesheet.png");
-  
-  AnimData nebulae[3]{};
-
-  for (int i = 0; i < 3; i++) {
+  const int sizeOfNebulae{3};
+  AnimData nebulae[sizeOfNebulae]{};
+  for (int i = 0; i < sizeOfNebulae; i++) {
     nebulae[i].rec.x = 0.0;
     nebulae[i].rec.y = 0.0;
     nebulae[i].rec.width = nebula.width / 8;
@@ -100,28 +99,19 @@ int main() {
     }
 
     // update nebula's animation
-    nebulae[0].runningTime += dt;
-    if (nebulae[0].runningTime >= nebulae[0].updateTime) {
-      nebulae[0].runningTime = 0.0;
-      nebulae[0].rec.x = nebulae[0].frame * nebulae[0].rec.width;
-      nebulae[0].frame++;
-      if (nebulae[0].frame > 7) {
-        nebulae[0].frame = 0;
+    for (int i = 0; i < sizeOfNebulae; i++) {
+      nebulae[i].runningTime += dt;
+      if (nebulae[i].runningTime >= nebulae[i].updateTime) {
+        nebulae[i].runningTime = 0.0;
+        nebulae[i].rec.x = nebulae[i].frame * nebulae[i].rec.width;
+        nebulae[i].frame++;
+        if (nebulae[i].frame > 7) {
+          nebulae[i].frame = 0;
+        }
       }
+      DrawTextureRec(nebula, nebulae[i].rec, nebulae[i].pos, WHITE);
     }
 
-    nebulae[1].runningTime += dt;
-    if (nebulae[1].runningTime >= nebulae[1].updateTime) {
-      nebulae[1].runningTime = 0.0;
-      nebulae[1].rec.x = nebulae[1].frame * nebulae[1].rec.width;
-      nebulae[1].frame++;
-      if (nebulae[1].frame > 7) {
-        nebulae[1].frame = 0;
-      }
-    }
-
-    DrawTextureRec(nebula, nebulae[0].rec, nebulae[0].pos, WHITE);
-    DrawTextureRec(nebula, nebulae[1].rec, nebulae[1].pos, RED);
     DrawTextureRec(scarfy, scarfyData.rec, scarfyData.pos, WHITE);
 
     EndDrawing();
