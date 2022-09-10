@@ -70,12 +70,25 @@ int main() {
   scarfyData.updateTime = 1.0/12.0;
   scarfyData.runningTime = 0.0;
 
+  Texture2D background = LoadTexture("textures/far-buildings.png");
+  float bgX{};
+
   while (!WindowShouldClose()) {
     // delta time (time since last frame)
     float dt{ GetFrameTime() };
 
     BeginDrawing();
     ClearBackground(WHITE);
+
+    // draw background
+    bgX -= 20 * dt;
+    if (bgX <= -background.width*2) {
+      bgX = 0.0;
+    }
+    Vector2 bgPos{bgX, 0.0};
+    Vector2 bg2Pos{bgX + background.width*2, 0.0};
+    DrawTextureEx(background, bgPos, 0.0, 2.0, WHITE);
+    DrawTextureEx(background, bg2Pos, 0.0, 2.0, WHITE);
 
     // perform ground check 
     if (isOnGround(scarfyData, windowDimensions[1])) {
@@ -113,6 +126,7 @@ int main() {
       DrawTextureRec(nebula, nebulae[i].rec, nebulae[i].pos, WHITE);
     }
 
+    // draw scarfy 
     DrawTextureRec(scarfy, scarfyData.rec, scarfyData.pos, WHITE);
 
     EndDrawing();
@@ -120,6 +134,7 @@ int main() {
 
   UnloadTexture(scarfy);
   UnloadTexture(nebula);
+  UnloadTexture(background);
   CloseWindow();
 
   return 0;
