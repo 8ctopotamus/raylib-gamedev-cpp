@@ -36,6 +36,8 @@ int main() {
     // draw map
     DrawTextureEx(map, mapPos, 0.0, 4.0, WHITE);
     // draw knight
+    Rectangle source{0.f, 0.f, (float)knight.width/6.f, (float)knight.height};
+    Rectangle dest{};
     // DrawTexturePro(knight, knightPos);
 
     EndDrawing();
