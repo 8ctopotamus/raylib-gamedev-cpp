@@ -1,6 +1,7 @@
 #include "raylib.h"
 #include "raymath.h"
 #include "Character.h"
+#include "Prop.h"
 
 int main() {
   int windowWidth{384};
@@ -14,28 +15,32 @@ int main() {
   const float mapScale{4.0};
   
   Character knight{windowWidth, windowHeight};
+  Prop rock{Vector2{0.f, 0.f}, LoadTexture("nature_tileset/Rock.png")};
 
   while(!WindowShouldClose()) {
-    float dT{ GetFrameTime() };
     BeginDrawing();
     ClearBackground(WHITE);
     
     // draw map
     mapPos = Vector2Scale(knight.getWorldPos(), -1.f);
     DrawTextureEx(map, mapPos, 0.0, mapScale, WHITE);
+    
+    // draw rock
+    rock.render(knight.getWorldPos());
+    
     // tick knight
-    knight.tick(dT);
+    knight.tick(GetFrameTime());
+    
     // check map bounds
-    Vector2 knightPos = knight.getWorldPos();
     if (
-      knightPos.x < 0.f ||
-      knightPos.y < 0.f ||
-      knightPos.x + windowWidth > map.width * mapScale ||
-      knightPos.y + windowHeight > map.height * mapScale 
+      knight.getWorldPos().x < 0.f ||
+      knight.getWorldPos().y < 0.f ||
+      knight.getWorldPos().x + windowWidth > map.width * mapScale ||
+      knight.getWorldPos().y + windowHeight > map.height * mapScale 
     ) {
       knight.undoMovement();
     } 
-
+    
     EndDrawing();
   }
   
