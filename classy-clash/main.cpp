@@ -11,6 +11,7 @@ int main() {
 
   Texture2D map = LoadTexture("nature_tileset/OpenWorldMap24x24.png");
   Vector2 mapPos{0.0, 0.0};
+  const float mapScale{4.0};
   
   Character knight{};
   knight.setScreenPos(windowWidth, windowHeight);
@@ -22,9 +23,19 @@ int main() {
     
     // draw map
     mapPos = Vector2Scale(knight.getWorldPos(), -1.f);
-    DrawTextureEx(map, mapPos, 0.0, 4.0, WHITE);
+    DrawTextureEx(map, mapPos, 0.0, mapScale, WHITE);
     // tick knight
-    knight.tick(dT);    
+    knight.tick(dT);
+    // check map bounds
+    Vector2 knightPos = knight.getWorldPos();
+    if (
+      knightPos.x < 0.f ||
+      knightPos.y < 0.f ||
+      knightPos.x + windowWidth > map.width * mapScale ||
+      knightPos.y + windowHeight > map.height * mapScale 
+    ) {
+      knight.undoMovement();
+    } 
 
     EndDrawing();
   }
