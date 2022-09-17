@@ -4,6 +4,7 @@
 #include "Character.h"
 #include "Prop.h"
 #include "Enemy.h"
+#include <string>
 
 int main() {
   int windowWidth{384};
@@ -43,6 +44,17 @@ int main() {
       prop.render(knight.getWorldPos());
     }
     
+    // draw text
+    if (knight.getAlive()) {
+      std::string knightsHealth = "Health: ";
+      knightsHealth.append(std::to_string(knight.getHealth()), 0, 5);
+      DrawText(knightsHealth.c_str(), 55.f, 45.f, 40, WHITE);
+    } else {
+      DrawText("Game Over!", 55.f, 45.f, 40, RED);
+      EndDrawing();
+      continue;
+    }
+
     knight.tick(GetFrameTime());
     
     // check map bounds
