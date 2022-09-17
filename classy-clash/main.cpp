@@ -15,7 +15,11 @@ int main() {
   const float mapScale{4.0};
   
   Character knight{windowWidth, windowHeight};
-  Prop rock{Vector2{0.f, 0.f}, LoadTexture("nature_tileset/Rock.png")};
+  
+  Prop props[2] {
+    Prop{Vector2{600.f, 300.f}, LoadTexture("nature_tileset/Rock.png")},
+    Prop{Vector2{400.f, 500.f}, LoadTexture("nature_tileset/Log.png")}, 
+  };
 
   while(!WindowShouldClose()) {
     BeginDrawing();
@@ -25,8 +29,10 @@ int main() {
     mapPos = Vector2Scale(knight.getWorldPos(), -1.f);
     DrawTextureEx(map, mapPos, 0.0, mapScale, WHITE);
     
-    // draw rock
-    rock.render(knight.getWorldPos());
+    // draw props
+    for (auto prop : props) {
+      prop.render(knight.getWorldPos());
+    }
     
     // tick knight
     knight.tick(GetFrameTime());
@@ -40,6 +46,13 @@ int main() {
     ) {
       knight.undoMovement();
     } 
+
+    // check prop collisions
+    for (auto prop : props) {
+      if ( CheckCollisionRecs(prop.getCollisionRec(knight.getWorldPos()), knight.getCollisionRec()) ) {
+        knight.undoMovement();
+      }
+    }
     
     EndDrawing();
   }
