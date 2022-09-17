@@ -22,4 +22,17 @@ void Character::tick(float deltaTime) {
   if (IsKeyDown(KEY_W)) velocity.y -= 1.0;
   if (IsKeyDown(KEY_S)) velocity.y += 1.0;
   BaseCharacter::tick(deltaTime);
+  // draw the sword
+  Vector2 origin{};
+  Vector2 offset{};
+  if (rightLeft > 0.f) {
+    origin = {0.f, weapon.height * scale};
+    offset = {40.f, 55.f};
+  } else {
+    origin = {weapon.width * scale, weapon.height * scale};
+    offset = {25.f, 55.f};
+  }
+  Rectangle source{0.f, 0.f, static_cast<float>(weapon.width) * rightLeft, static_cast<float>(weapon.height)};
+  Rectangle dest{getScreenPos().x + offset.x, getScreenPos().y + offset.y, weapon.width * scale, weapon.height * scale};
+  DrawTexturePro(weapon, source, dest, origin, 0.f, WHITE);
 }
