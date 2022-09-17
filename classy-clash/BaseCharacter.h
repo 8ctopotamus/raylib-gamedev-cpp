@@ -10,6 +10,7 @@ class BaseCharacter
     void undoMovement();
     Rectangle getCollisionRec();
     virtual void tick(float deltaTime);
+    virtual Vector2 getScreenPos() = 0; // NOTE: = 0; makes this a "Pure virtual function". It is now an "Abstract class", meaning we can no longer create instances of BaseCharacter, we can only derive child classes from it.
   protected:
     Texture2D texture{LoadTexture("characters/knight_idle_spritesheet.png")};
     Texture2D idle{LoadTexture("characters/knight_idle_spritesheet.png")};
@@ -28,6 +29,7 @@ class BaseCharacter
     float width{};
     float height{};
     const float scale{4.0};
+    Vector2 velocity{};
 };
 
 #endif
