@@ -16,6 +16,7 @@ Vector2 Character::getScreenPos() {
 }
 
 void Character::tick(float deltaTime) {
+  if (!getAlive()) return;
   // move character
   if (IsKeyDown(KEY_A)) velocity.x -= 1.0;
   if (IsKeyDown(KEY_D)) velocity.x += 1.0;
@@ -29,23 +30,27 @@ void Character::tick(float deltaTime) {
   if (rightLeft > 0.f) {
     origin = {0.f, weapon.height * scale};
     offset = {40.f, 55.f};
-    rotation = 35.f;
     weaponCollisionRec = {
       getScreenPos().x + offset.x,
       getScreenPos().y + offset.y - weapon.height * scale,
       weapon.width * scale,
       weapon.height * scale
     };
+    IsMouseButtonDown(MOUSE_LEFT_BUTTON)
+      ? rotation = 35.f
+      : rotation = 0;
   } else {
     origin = {weapon.width * scale, weapon.height * scale};
     offset = {25.f, 55.f};
-    rotation = -35.f;
     weaponCollisionRec = {
       getScreenPos().x + offset.x - weapon.width * scale,
       getScreenPos().y + offset.y - weapon.height * scale,
       weapon.width * scale,
       weapon.height * scale
     };
+    IsMouseButtonDown(MOUSE_LEFT_BUTTON)
+      ? rotation = -35.f
+      : rotation = 0;
   }
   Rectangle source{0.f, 0.f, static_cast<float>(weapon.width) * rightLeft, static_cast<float>(weapon.height)};
   Rectangle dest{getScreenPos().x + offset.x, getScreenPos().y + offset.y, weapon.width * scale, weapon.height * scale};
