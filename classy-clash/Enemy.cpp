@@ -19,10 +19,16 @@ Vector2 Enemy::getScreenPos() {
 void Enemy::tick(float deltaTime) {
   if (!getAlive()) return;
   // move enemy
-  velocity = Vector2Subtract(target->getScreenPos(), getScreenPos());
+  
+  // distance from the enemy to the character
+  velocity = Vector2Subtract(target->getScreenPos(), getScreenPos()); 
+  
+  // stop chasing if within radius of character (chase radius)
+  if (Vector2Length(velocity) < radius) velocity = {};
+
   BaseCharacter::tick(deltaTime);
 
-  if (CheckCollisionRecs(target->getCollisionRec(), getCollisionRec())) {
+  if ( CheckCollisionRecs(target->getCollisionRec(), getCollisionRec()) ) {
     target->takeDamage(damagePerSec * deltaTime);
   }
 }
